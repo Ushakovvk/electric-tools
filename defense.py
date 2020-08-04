@@ -91,9 +91,9 @@ def plot_defense(scheme):
 
 # Пример
 if __name__ == '__main__':
-    scheme = [Relay('Проект. КТП', [('rtv_4', (110, 9)), ('independent', (183, 0.5)), ('independent', (1377, 0.01))]),
-              Relay('РТП-12 Байсад Л-2', [('independent', (220, 0.8)), ('independent', (5192, 0.01))]),
-              Relay('РТП-12 Секционный', [('independent', (300, 1.1))]),
-              Relay('РТП-12 ф.26 ПС-224', [('independent', (360, 1.4))]),
-              Relay('ПС-224 ф.26', [('independent', (400, 1.8))])]
+    scheme = [Relay('Проект. КТП', [('independent', (183, 0.3)), ('independent', (1377, 0.01))]),
+              Relay('РП-12 Байсад Л-2', [('independent', (220, 0.5)), ('independent', (5192, 0.01))]),
+              Relay('РП-12 Секционный', [('independent', (300, 0.8))]),
+              Relay('РП-12 ф.23 ПС-224', [('independent', (300, 1))]),
+              Relay('ПС-224 ф.23', [('independent', (400, 1.4))])]
     plot_defense(scheme)
